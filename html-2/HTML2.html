@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizza Order</title>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Pizza Order</legend>
+      <form action="">
+        <label for="yourName">Your Name: </label>
+        <input type="text" id="yourName" name="yourName" minlength="3" maxlength="10" required/>
+
+        <br />
+        <br />
+
+        <label for="email">Your email:</label>
+        <input type="email" id="email" name="email" required/>
+
+        <br />
+        <br />
+
+        <label for="nrpizza">Number of pizza:</label>
+        <input type="number" id="nrpizza" name="nrpizza" min="1" max="7" required value="1"/>
+
+        <br />
+        <br />
+        <label for="data1">Introduceti data de livrare:</label>
+          <input type="date" id="data1"name="data1" min="2023-11-06" max="2023-12-31" value="2023-11-06"/>
+
+
+        <br />
+        <br />
+        Topping:
+        <input type="radio" name="toping" value="supreme" id="supreme" />
+        <label for="supreme">Supreme</label>
+        <input type="radio" name="toping" value="vegetarian" id="vegetarian" />
+        <label for="vegetarian">Vegetarian</label>
+        <input type="radio" name="toping" value="hawaiian" id="hawaiian" />
+        <label for="hawaiian">Hawaiian</label>
+
+        <br />
+        <br />
+
+        <label for="sauce">Sauce:</label>
+        <select id="sauce" name="sauce">
+          <option value="tomato">Tomato</option>
+          <option value="tabasco">Tabasco</option>
+          <option value="pineapple">Pineapple</option>
+        </select>
+
+        <br />
+        <br />
+
+        Extras:
+        <input type="checkbox" name="extras" id="cheese" value="cheese" />
+        <label for="cheese">Cheese</label>
+        <input type="checkbox" name="extras" id="onion" value="onion" />
+        <label for="onion">Onion</label>
+        <input type="checkbox" name="extras" id="olives" value="olives" />
+        <label for="olives">Olives</label>
+
+        <br />
+        <br />
+
+        <label for="instructions"> Delivery instructions: </label>
+        <br />
+        <textarea id="instructions" name="instructions" required placeholder="I am living..."></textarea>
+
+        <br />
+        <br />
+
+        <input type="submit" value="Send order" /><input type="reset" value="Reset" />
+      </form>
+    </fieldset>
+  </body>
+</html>

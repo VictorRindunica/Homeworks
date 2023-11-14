@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formular</title>
+</head>
+<body>
+    <table>
+        <thead border="1">
+            <tr>
+                <th><h1>General Information</h1></th>
+                <th><h1>Contact Details</h1></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                <form action="bio.html" method="get">
+                    <select required name="title">
+                        <option value="Mr">Mr.</option>
+                        <option value="Mr">Ms.</option>
+                        <option value="Mrs">Mrs.</option>
+                      </select>
+                      <br/>
+                      <br/>
+                      <input type="text" name="firstname" placeholder="First name" /> 
+                      <input type="text" name="lastname" placeholder="Last name" />
+                      <br/>
+                      <br/>
+                      <select required name="position">
+                        <option value="frontedDeveloper">Frontend Developer</option>
+                        <option value="backendDeveloper">Backend developer</option>
+                        <option value="projectManager">Project manager</option>
+                      </select>
+                      <br/>
+                      <br/>  
+                      <input type="text" name="company" placeholder="Company" /> 
+                      <br/>
+                      <br/>  
+                      <input type="text" name="businessarea" placeholder="Buisness Area" />
+                      <select required name="employees">
+                        <option value="1_5">1-5</option>
+                        <option value="5_10">5-10</option>
+                        <option value="10_20">10-20</option>
+                        <option value="20_more">20-more</option>
+                      </select>
+                </form>
+            </td>
+
+                <td>
+                <form action="bio.html" method="post">
+                    <input type="text" name="streetnnumber" placeholder="Street+Nr">
+                    <br/>
+                    <br/>
+                    <input type="text" name="additionalnformation" placeholder="Additional information">
+                    <br/>
+                    <br/>
+                    <input type="text" name="zipCode" placeholder="Zip Code">
+                    <select required name="place">
+                        <option value="bucuresti">Bucuresti</option>
+                        <option value="cluj">Cluj</option>
+                        <option value="iasi">Iasi</option>
+                        <option value="timisoara">Timisoara</option>
+                      </select>
+                     <br/>
+                     <br/>
+                      <select required name="country">
+                        <option value="Romania">Romania</option>
+                        <option value="republicamoldova">Rep. Moldova</option>
+                        <option value="ucraina">Ucraina</option>
+                        <option value="rusia">Rusia</option>
+                      </select>
+                    <br/>
+                    <br/>
+                    <input type="text" name="code" placeholder="Code+">
+                    <input type="number" name="phoneNumber" placeholder="Phone umber">
+                    <br/>
+                    <br/>               
+                    <input type="email" name="email" placeholder="Your Email">
+                    <br/>
+                    <br/>
+                    <input type="checkbox" name="tc" id="tc" value="accept" />
+                    <label for="tc">I do accept the <a href="form.html">Terms and Conditions</a> of your site. </label>
+                    <br/>
+                    <br/>
+                    <input type="submit" value="Regiter Badge" />
+                </form>
+                 </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
