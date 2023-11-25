@@ -1,0 +1,38 @@
+html,
+body { 
+    margin: 0;
+    padding: 0;
+}
+
+.lightgray {
+    background-color: lightgray;
+    width: 800px;
+    height: 800px;
+    position: relative;
+    }
+.yellow,
+.blue,
+.green {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+}
+.yellow {
+    background-color: yellow;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -100px 0 0 -100px;
+}
+
+.blue {
+    background-color: blue;
+
+}
+.green {
+    background-color: green;
+
+}
+
