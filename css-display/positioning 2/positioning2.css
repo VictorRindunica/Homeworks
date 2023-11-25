@@ -1,0 +1,51 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+div {
+    text-align: center;
+}
+h2 {
+    font-size: 35px;
+}
+
+.parent {
+    width: 800px;
+    height: 300px;
+    background-color: lightgreen;
+    border: dotted 10px;
+    border-color: indigo;
+    border-radius: 20px;
+    position: relative;
+}
+.child1,
+.child2,
+.child3 {
+    width: 300px;
+    height: 200px;
+    border: dotted 5px;
+    border-radius: 10px;
+    border-color: indigo;
+    
+    top: 0;
+    
+}
+.child1 {
+    position: absolute;
+    background-color: darkslategray;
+}
+.child2 {
+    position: relative;
+    left: 30%;
+    background-color: mediumpurple;
+    z-index: 1;
+
+}
+
+.child3 {
+    position: absolute;
+    background-color: olive;
+    right: 25px;
+    top: 35px;
+}
