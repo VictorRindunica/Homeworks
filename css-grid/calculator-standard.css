@@ -1,0 +1,64 @@
+.standard {
+    font-family: 'Questrial', sans-serif;
+    height: 100vh;
+    border: solid 2px;
+    background-color: #E6E6E6;
+    display: grid;
+    grid-template-rows: 30px 50px 200px 40px auto ;
+}
+header {
+    display: grid;
+    grid-template-columns: auto 30px 30px 30px;
+    align-items: center;
+    text-align: center;
+}
+header:first-child {
+    text-align: left;
+}
+.menu {
+    display: grid;
+    grid-template-columns: 30px auto 30px 30px;
+    align-items: center;
+    text-align: center;
+}
+.menu:nth-child(2) {
+    text-align: left;
+}
+.display {
+    font-weight: 900;
+    font-size: 60px;
+    text-align: right;
+}
+.memory_bar {
+    font-size: 28px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    align-items: center;
+    text-align: center;
+}
+.buttons {
+    
+    display: grid;
+    grid-template-columns: auto auto  auto  auto ;
+    grid-template-rows: auto auto auto auto auto auto;
+    gap: 6px;
+}
+button {
+    font-size: 28px;
+    background-color: #FAFAFA;
+    border: none;
+}
+.oth-color {
+    background-color:  #F0F0F0;
+}
+.blue-color {
+    background-color: #8ABAE0;
+}
+.number {
+    font-weight: 800;
+}
+button:hover {
+    font-family: 'Questrial', sans-serif;
+    font-weight: 900;
+    color: #8A1AE0;
+}
