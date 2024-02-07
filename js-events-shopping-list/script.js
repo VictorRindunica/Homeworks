@@ -9,55 +9,40 @@ function submit(click){
     myText.classList.add('.text')
     myText.textContent = inputData.value;
 
+
 // Aici setam limita de outputuri
 
     const inputs = document.querySelectorAll('h2')
 
     if (inputs.length < 10){
 
-        // Codul de mai jos face introducerea textului in zona de output
+// Codul de mai jos face introducerea textului in zona de output
 
         if(inputData.value != ""){
             outputData.appendChild(myText)
         }
     }else {return}
 
-        // Codul de pe rindul urmator curata zona de input
+// Codul de pe rindul urmator curata zona de input
 
         inputData.value = ""
 
-    //  Codul de mai de jos  face backgroundul coloralt  la double click
+//  Codul de mai de jos  face backgroundul coloralt (Marcat ca rezolvat)  la  click
 
-        myText.addEventListener('dblclick', solved);    
+        myText.addEventListener('click', solved);  
         function solved (){
-            myText.classList.add('myClass');
-  
+        myText.classList.add('myClass');
+
+      }
+
+// Sterge element la duclu click 
+
+    myText.addEventListener('dblclick', deletee); 
+        function deletee (click){
+        myText.remove()
     }
-  
+
+    
 
 }
 
-
-const deleteButton = document.querySelector(".delete")
-const inputs = document.querySelectorAll("h2")
-const deletedInputs = inputs.currentTarget
-console.log(deletedInputs)
-
-
-
-// deleteButton.addEventListener('click', deleteText);
-
-// function deleteText (click){
-//     inputs.currentTarget.addEventListener('click', toBeDeleted);    
-//     function toBeDeleted (){
-//         inputs.currentTarget.classList.add('myClass2');
-
-// }
-
-
-// }
-
-
-
-
-//  SCUZE PENTRU COD DEZORDONAT
